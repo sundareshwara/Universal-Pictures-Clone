@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Pictures</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+     .logo {
+            height: 100%;
+            width: 8vw;
+        }
+        .sslogo{
+            width: 25vw;
+        }
+.Nav{
+    height: 8vw;
+    background-color: black !important; 
+    z-index: 1000;
+}
+.navbar .nav-link{
+color: white !important;
+}
+.navbar-toggler {
+            background-color: rgb(243, 241, 241) !important;
+        }
+        .navbar-toggler-icon {
+            background-color: rgb(245, 240, 240);
+        }
+        .navbar-collapse {
+            background-color: black;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+.dropdown-menu a:hover{
+    color: black !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: 3%; 
+        top: auto; /* Override the default top positioning */
+    width: auto; /* Ensure buttons are not too wide */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(0, 191, 255);
+   
+    padding: 1%;
+}
+.side-panel {
+            width: 25%;
+            h /* Take up the full height of the container */
+            padding-top: 8vw;
+            overflow-y: scroll; /* Enable vertical scrolling */
+        }
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #06a4ff;}
+
+            .buttons-container {
+            position: absolute;
+            bottom: 3%; /* Align with carousel control buttons */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            gap: 10px; /* Space between buttons */
+        }
+
+        .get-tickets1,.get-tickets3 {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgb(0, 155, 252);
+            padding: 10px 20px;
+            border-radius: 10%;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .get-tickets2{
+          background-color:rgb(0, 155, 252);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10%;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .get-tickets1:hover,
+        .get-tickets3:hover {
+            background-color: rgb(0, 155, 252);
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+        }
+
+        .get-tickets2:hover {
+            background-color: white;
+            color: rgb(0, 155, 252);
+            border-radius: 30%;
+        }
+
+
+        #mslide{
+          width: 100% !important;
+          height: 50%;
+display: flex !important;
+flex-direction: row !important;
+padding-left: 6%;
+padding-right: 6%;
+justify-content: space-around;
+        }
+
+        #email{
+            position: absolute;
+           top:50%; /* Align with carousel control buttons */
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+            gap: 10px; /* Space between buttons */
+        }
+
+
+        #footer{
+        position: relative;
+        width: 100%;
+       
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    
+    #foot{
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        font-size: small;
+        position:relative;
+        bottom: 0;
+        text-align: right;
+        display: flex;
+        justify-content: right;
+        padding-right: 5%;
+        align-items: center;  
+    }
+    
+    #policy{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-decoration: none;
+        color: white;
+    }
+    #policy a{
+        color: white;
+        text-decoration: none;
+    }
+
+    @media (max-width:768px) {
+        #footer{
+            height: auto;
+            padding: 20px;
+        }     
+    }
+    #addply{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+</style>
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light Nav" style="width: 100%; position: fixed;">
+    <a class="navbar-brand" href="#" >
+        <img class="logo" src="https://www.universalstudios.com/assets/dist/images/universal-contactus.jpeg" alt=""  ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+    <div class="collapse navbar-collapse text" id="navbarSupportedContent" style="padding-left: 30vw;">
+      <ul style="width: 50%; justify-content: space-around;" class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Movies <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trailers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">News&Press</a>
+          </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ...
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(36, 92, 212); ">
+            <a style="color: white;" class="dropdown-item" href="#">About</a>
+            <a style="color: white;" class="dropdown-item" href="#">Leadership</a>
+            <a style="color: white;" class="dropdown-item" href="#">NBCUniversal</a>
+            <a style="color: white;" class="dropdown-item" href="#">Home Entertainment</a>
+            <a style="color: white;" class="dropdown-item" href="#">Universal Products and Experience</a>
+            <a style="color: white;" class="dropdown-item" href="#">Global Talent Development and Inclusion</a>
+            <a style="color: white;" class="dropdown-item" href="#">Universal Studio Parks and Resorts</a> 
+        </div>
+        </li>
+        
+      </ul>
+     <a href=""><img class="sslogo" src="logo.png" alt=""></a>
+    </div>
+  </nav>
+
+
+
+<div class="front" style="display: flex; height: 100vh;">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top: 8vw; width: 70%;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="twisters poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="new new despicable poster.jpg" class="d-block w-100" style="height: calc(100vh - 8vw); object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="speak no evil poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="wild robot poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="new wicked.png" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+<div class="buttons-container" style="width: 70%;" >
+    <div class="get-tickets1">ABOUT FILM</div>
+    <div class="get-tickets2">GET TICKETS</div>
+    <div class="get-tickets3">WATCH TRAILER</div>
+  </div>
+  </div>
+
+ <div class="side-panel" style="width: 30%;height: 100%; padding-top: 8vw;">
+  <img style="width: 100%;" src="twisters.png" alt="">
+  <img style="width: 100%" src="dispicable.png" alt="">
+  <img style="width: 100%;" src="no evil.png" alt="">
+  <img style="width: 100%" src="wild robot.png" alt="">
+  <img style="width: 100%;" src="wicked.png" alt="">
+</div>
+</div>
+
+
+
+<DIV style="padding: 3%; padding-left: 8%;"><H2>TRAILER</H2></DIV>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="2000">
+      <div style="width: 100%; display: flex; justify-content: space-around;">
+        <a href=""> <img style="width: 100%; !important" src="WICKED TRAILER.png" alt=""></a> 
+        <a href=""> <img style="width: 100%;" src="MONKEY MAN TRAILER.png" alt=""></a> 
+        <a href=""> <img style="width: 100%;" src="WILD ROBOT TRAILER.png" alt=""></a> 
+        <a href=""> <img style="width: 100%;" src="THE FALL GUY TRAILER.png" alt=""></a> 
+      
+      </div>
+    </div>
+    
+    <div class="carousel-item"  data-interval="2000">
+    <div style="width: 100%; display: flex; justify-content: space-around;">
+    <a href=""> <img style="width:100%;" src="TWISTER TRAILER 1.png" alt=""></a> 
+    <a href=""> <img style="width: 100%;" src="TWISTER TRAILER 2.png" alt=""></a> 
+    <a href=""><img style="width: 100%;" src="SPEAKNO EVIL TRAILER.png" alt=""></a> 
+    <a href=""> <img style="width: 100%;" src="WILD ROBOT 2 TRAILER.png" alt=""></a> 
+    </div></div>
+  </div>
+</div>
+ 
+
+<div style="display: flex;">
+  <div style="width: 50%; height: 70vh; overflow: hidden;">
+    <a href="#">
+      <img style="width: 100%; height: 100%; object-fit: cover;" src="those who about to die.jpeg" alt="Image 1">
+    </a>
+  </div>
+  <div style="position: relative; width: 50%; height: 70vh; overflow: hidden;">
+    <img src="fast.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Image 2">
+    <div style="width: 40%; position: absolute; top: 70%; left: 30%; transform: translate(-50%, -50%);
+        padding: 10px; display: flex; justify-content: center; align-items: center;">
+     
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input style="color: rgb(255, 255, 255); width: 75%; background: rgb(0, 0, 0); 
+            border-radius: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-weight: bold; border: 2px solid white;" placeholder="Enter your Mail ID" class="form-control me-2" type="search" aria-label="Search">
+            <button style="color: rgb(0, 0, 0); width: 25%; border-radius: 30px; font-family: 'Segoe UI', 
+        Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; background-color: rgb(255, 255, 255);"
+         class="btn btn-outline-success" type="submit">></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="background-color: black; padding-bottom: 2vw;padding-left: 5vw;padding-right: 5vw; display: flex;">
+ <div>
+  <div style="width: 100%; background-color: black; color: white;">
+<p style="padding-top: 2vw; font-size: 2vw;">Trolls Band Together Brings the Trolls Magic to Life with Products, Games, Experiences, and More</h6>
+  </div>
+  <p style=" color: white;">November 16, 2023 |<br> via www.nbcuniversal.com</p>
+  <p style=" text-decoration: underline; color: rgb(0, 162, 255);">KEEP READING</p>
+</div>
+<div>
+  <div style="width: 100%; background-color: black; color: white;">
+<p style="padding: 2vw; font-size: 2vw;">Next Gen 2023: The Hollywood Reporter’s 35 Rising Executives 35 and Under ft. Michelle Momplaisir, Kelsey Balance and Megan Macmillan</h6>
+  </div>
+  <p style="padding-left: 2vw; color: white;">November 15, 2023 |<br> via www.hollywoodreporter.com</p>
+  <p style=" padding-left: 2vw; text-decoration: underline; color: rgb(0, 162, 255);">KEEP READING</p>
+</div>
+<div>
+  <div style="width: 100%; background-color: black; color: white;">
+<p style="padding: 2vw; font-size: 2vw;">Donna Langley, Veronika Kwan Vandenberg and Pearlena Igbokwe Named to Variety Power of Women in Hollywood 2023</h6>
+  </div>
+  <p style="padding-left: 2vw; color: white;">November 16, 2023 |<br> viavariety.com</p>
+  <p style=" padding-left: 2vw; text-decoration: underline; color: rgb(0, 162, 255);">KEEP READING</p>
+</div>
+<div>
+  <div style="width: 100%; background-color: black; color: white;">
+<p style="padding: 2vw; font-size: 2vw;">Focus Features Lands U.S. Rights To Edward Berger’s Papal Thriller ‘Conclave’ Starring Ralph Fiennes And Stanley Tucci</h6>
+  </div>
+  <p style="padding-left: 2vw; color: white;">November 16, 2023 |<br> via deadline.com</p>
+  <p style=" padding-left: 2vw; text-decoration: underline; color: rgb(0, 162, 255);">KEEP READING</p>
+</div>
+
+</div>
+
+
+<div style="width: 100%; display: flex;">
+  <img width="50%" src="kumfu.jpg" alt="">
+<img width="50%" src="prime paris.jpg" alt="">
+</div>
+
+
+
+
+<div id="footer">
+  
+  <div id="addply">
+    <img src="universallogo.svg" style="width: 10%; "  alt="">
+     <p id="policy">
+      <a href="">Movies</a><br>
+      <a href="">Trailers</a><br>
+      <a href="">News & Press</a><br>
+  </p> 
+  <p id="policy">
+     
+      <a href="">About</a><br>
+      <a href="">NBCUniversal</a><br>
+      <a href="">Home Entertainment</a><br>
+      <a href="">Universal Products & Experiences</a><br>
+      <a href="">Global Talent Development and Inclusion </a><br>
+      <a href="">Universal Studio Park & Resorts</a><br>
+      <a href="">Careers</a><br>
+      <a href="">Sitemap</a><br>
+  </p>
+  <p id="policy">
+    <a href="#">Terms of Service</a> <br>
+    <a href="#">Privacy Policy</a> <br>
+    <a href="#">Cookie Notice</a> <br>
+    <a href="#">Ad Choices</a> <br>
+    <a href="#">CA Notice</a> <br>
+    <a href="#">Canada</a> <br>
+    <a href="#">International</a> <br>
+    <a href="#">ParentalGuide.com</a> <br>
+    <a href="#">FilmRatings.com</a> <br>
+    <a href="#">MPAA.org</a> <br>
+    <a href="#">Contact Us</a> <br>
+    <a href="#">Tobacco Policy</a> <br>
+    <a href="#">YouTube Terms of Service</a> <br>
+    <a href="#">Google Privacy Policy</a>
+  </p>
+  <div style="width: 30%; height: 15%; display: flex; flex-direction: column;">
+  <img style="width: 100%; height: 100%;" src="logo.png" alt="">
+  <div id="foot">
+     <span>&copy;</span> ~Sundareshwara Anbukrishnan
+           </div>
+</div> </div>
+
+        </div> 
+       
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
