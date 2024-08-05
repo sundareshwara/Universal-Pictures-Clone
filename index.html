@@ -171,18 +171,46 @@ justify-content: space-around;
     }
 
     @media (max-width:768px) {
+    
         #footer{
             height: auto;
             padding: 20px;
         }     
-    }
+        .front{
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          flex-wrap: wrap;
+        }
+        #carouselExampleControls{
+          width: 100%;
+          position: relative;
+        }
+        .kumfu{
+          flex-wrap: wrap;
+        }
+        .kumfu img{
+          width: 100%;
+        }
+        .para {
+          flex-wrap: wrap;
+        }
+      .para p{
+        font-size: 3vw;
+      }
+      #addply{
+        flex-direction: column;
+      }
+      }
     #addply{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
+    #addply img{
+      width: 100vw;
+    }
 </style>
-
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light Nav" style="width: 100%; position: fixed;">
     <a class="navbar-brand" href="#" >
@@ -224,23 +252,23 @@ justify-content: space-around;
 
 
 
-<div class="front" style="display: flex; height: 100vh;">
+<div class="front" style="display: flex; height: 50vw;">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top: 8vw; width: 70%;">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="twisters poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+        <img src="twisters poster.jpg" class="d-block w-100" alt="..." style="height: calc(50vw - 8vw); object-fit: cover;">
       </div>
       <div class="carousel-item">
-        <img src="new new despicable poster.jpg" class="d-block w-100" style="height: calc(100vh - 8vw); object-fit: cover;" alt="...">
+        <img src="new new despicable poster.jpg" class="d-block w-100" style="height: calc(50vw - 8vw); object-fit: cover;" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="speak no evil poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+        <img src="speak no evil poster.jpg" class="d-block w-100" alt="..." style="height: calc(50vw - 8vw); object-fit: cover;">
       </div>
       <div class="carousel-item">
-        <img src="wild robot poster.jpg" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+        <img src="wild robot poster.jpg" class="d-block w-100" alt="..." style="height: calc(50vw - 8vw); object-fit: cover;">
       </div>
       <div class="carousel-item">
-        <img src="new wicked.png" class="d-block w-100" alt="..." style="height: calc(100vh - 8vw); object-fit: cover;">
+        <img src="new wicked.png" class="d-block w-100" alt="..." style="height: calc(50vw - 8vw); object-fit: cover;">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -324,7 +352,7 @@ justify-content: space-around;
 
 
 
-<div style="background-color: black; padding-bottom: 2vw;padding-left: 5vw;padding-right: 5vw; display: flex;">
+<div class="para" style="background-color: black; padding-bottom: 2vw;padding-left: 5vw;padding-right: 5vw; display: flex;">
  <div>
   <div style="width: 100%; background-color: black; color: white;">
 <p style="padding-top: 2vw; font-size: 2vw;">Trolls Band Together Brings the Trolls Magic to Life with Products, Games, Experiences, and More</h6>
@@ -357,7 +385,7 @@ justify-content: space-around;
 </div>
 
 
-<div style="width: 100%; display: flex;">
+<div class="kumfu" style="width: 100%; display: flex;">
   <img width="50%" src="kumfu.jpg" alt="">
 <img width="50%" src="prime paris.jpg" alt="">
 </div>
